@@ -14,7 +14,7 @@ syntax on
 " Définit le jeu de couleurs utilisé
 " Les jeux de couleur disponibles sont les fichiers avec l'extension .vim
 " dans le répertoire /usr/share/vim/vimcurrent/colors/
-colorscheme delek
+colorscheme elflord 
 
 " Affiche la position du curseur 'ligne,colonne'
 set ruler
@@ -95,5 +95,9 @@ set incsearch
 set hlsearch
 
 " Décommentez la ligne suivante si vous voulez afficher les numéros de ligne
-"set number
+set number
 set encoding=utf-8
+
+" Load pathogen
+call pathogen#runtime_append_all_bundles()
+call pathogen#helptags()
