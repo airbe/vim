@@ -5,5 +5,5 @@ ln -s ~/.vim/dotvim ~/.vimrc
 cd ~/.vim
 git submodule init
 git submodule update
-git submodule foreach submodule init
-git submodule foreach submodule update
+git submodule foreach git submodule init
+git submodule foreach git submodule update

@@ -1,6 +1,12 @@
 " Avertissement par flash (visual bell) plutôt que par beep
 set vb
 
+set encoding=utf-8
+
+" numero de ligne
+set number
+highlight LineNr ctermbg=blue ctermfg=gray
+
 " Active la coloration syntaxique
 syntax on
 " Définit le jeu de couleurs utilisé
@@ -66,10 +72,6 @@ filetype plugin indent on
 set incsearch
 " Mettre en surbrillance le mot cherché
 set hlsearch
-
-" Décommentez la ligne suivante si vous voulez afficher les numéros de ligne
-set number
-set encoding=utf-8
 
 " Load pathogen
 call pathogen#runtime_append_all_bundles()
