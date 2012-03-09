@@ -19,7 +19,7 @@ set ruler
 " Affiche une barre de status en bas de l'écran
 set laststatus=2
 " Contenu de la barre de status
-set statusline=%<%f%h%m%r%=%l,%c\ %P
+set statusline=[%l,%v\ %P%M]\ %f\ %r%h%w\ (%{&ff})\ %{fugitive#statusline()}
 
 " Largeur maxi du texte inséré
 set textwidth=79
