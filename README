@@ -1,5 +1,7 @@
 git clone git@hio.fr:/home/git/vim ~/.vim
 
+sudo aptitude install exuberant-ctags
+
 ln -s ~/.vim/dotvim ~/.vimrc
 
 cd ~/.vim
