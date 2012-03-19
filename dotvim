@@ -2,7 +2,7 @@
 set vb
 
 set encoding=utf-8
-
+set fileformat=unix
 " numero de ligne
 set number
 highlight LineNr ctermbg=blue ctermfg=gray
