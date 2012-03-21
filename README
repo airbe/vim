@@ -1,3 +1,5 @@
+git clone git://github.com/romainbureau/vim.git ~/.vim
+
 sudo aptitude install exuberant-ctags
 
 ln -s ~/.vim/dotvim ~/.vimrc
