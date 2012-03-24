@@ -1,6 +1,5 @@
 " Avertissement par flash (visual bell) plutôt que par beep
 set vb
-set pastetoggle=<F2>
 set encoding=utf-8
 set fileformat=unix
 " numero de ligne
@@ -66,6 +65,9 @@ set autoindent
 " Detection automatique du type de fichier
 filetype on
 filetype plugin indent on 
+
+" fix paste from another application with f2 (enable paste mode in vim)
+set pastetoggle=<F2>
 
 " Recherches incrémentalees : rechercher au fur et à mesure qu'on
 " tape le motif de recherche
