@@ -1,6 +1,6 @@
 " Avertissement par flash (visual bell) plutôt que par beep
 set vb
-
+set pastetoggle=<F2>
 set encoding=utf-8
 
 " numero de ligne
