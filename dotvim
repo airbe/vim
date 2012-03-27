@@ -75,6 +75,9 @@ set incsearch
 " Mettre en surbrillance le mot cherché
 set hlsearch
 
+" twig integration
+au BufRead,BufNewFile *.twig setfiletype htmldjango
+
 " Load pathogen
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
