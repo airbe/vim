@@ -21,8 +21,8 @@ set laststatus=2
 set statusline=[%l,%v\ %P%M]\ %f\ %r%h%w\ (%{&ff})\ %{fugitive#statusline()}
 
 " Largeur maxi du texte inséré
-"set textwidth=79
-set colorcolumn=80
+" set textwidth=79
+" set colorcolumn=80
 
 " Ne pas assurer la compatibilité avec l'ancien Vi
 set nocompatible
