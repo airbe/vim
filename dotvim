@@ -21,8 +21,12 @@ set laststatus=2
 set statusline=[%l,%v\ %P%M]\ %f\ %r%h%w\ (%{&ff})\ %{fugitive#statusline()}
 
 " Largeur maxi du texte inséré
-" set textwidth=79
+" set textwidth=80
 " set colorcolumn=80
+" Highlight chars that go over the 80-column limit
+:highlight OverLength ctermbg=red ctermfg=white guibg=red guifg=white
+:match OverLength '\%81v.*'
+
 
 " Ne pas assurer la compatibilité avec l'ancien Vi
 set nocompatible
@@ -54,10 +58,11 @@ set ignorecase
 set expandtab
 set foldmethod=indent
 set foldlevel=12
-set shiftwidth=4
-set softtabstop=4
-set tabstop=4
+set shiftwidth=2
+set softtabstop=2
+set tabstop=2
 set autoindent
+set smartindent
 " Décommentez les 2 lignes suivantes si vous voulez avoir les tabulations et
 " les espaces marqués en caractères bleus
 "set list
