@@ -1,3 +1,6 @@
+# VIM Configure
+./configure --with-features=huge --enable-rubyinterp --enable-cscope --enable-multibyte --enable-pythoninterp=yes --enable-python3interp=yes
+
 git clone git://github.com/romainbureau/vim.git ~/.vim
 
 sudo aptitude install exuberant-ctags
@@ -9,3 +12,4 @@ git submodule init
 git submodule update
 git submodule foreach git submodule init
 git submodule foreach git submodule update
+
