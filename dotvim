@@ -2,6 +2,7 @@
 set vb
 set encoding=utf-8
 set fileformat=unix
+set t_Co=256
 " numero de ligne
 set number
 highlight LineNr ctermbg=blue ctermfg=gray
@@ -11,7 +12,7 @@ syntax on
 " Définit le jeu de couleurs utilisé
 " Les jeux de couleur disponibles sont les fichiers avec l'extension .vim
 " dans le répertoire /usr/share/vim/vimcurrent/colors/
-colorscheme elflord 
+colorscheme mustang 
 
 " Affiche la position du curseur 'ligne,colonne'
 set ruler
