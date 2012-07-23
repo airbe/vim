@@ -1,8 +1,11 @@
+let mapleader = ","
+let g:mapleader = ","
 " Avertissement par flash (visual bell) plutôt que par beep
 set vb
 set encoding=utf-8
 set fileformat=unix
 set t_Co=256
+set lazyredraw
 " numero de ligne
 set number
 highlight LineNr ctermbg=blue ctermfg=gray
@@ -25,8 +28,8 @@ set statusline=[%l,%v\ %P%M]\ %f\ %r%h%w\ (%{&ff})\ %{fugitive#statusline()}
 " set textwidth=80
 " set colorcolumn=80
 " Highlight chars that go over the 80-column limit
-:highlight OverLength ctermbg=red ctermfg=white guibg=red guifg=white
-:match OverLength '\%81v.*'
+" :highlight OverLength ctermbg=red ctermfg=white guibg=red guifg=white
+" :match OverLength '\%81v.*'
 
 
 " Ne pas assurer la compatibilité avec l'ancien Vi
@@ -51,6 +54,8 @@ set showmatch
 set nostartofline
 " Option de la complétion automatique
 set wildmode=list:full
+" relire automatiquement un fichier modifié de l'exterieur 
+set autoread
 
 " Les recherches ne sont pas 'case sensitives'
 set ignorecase
@@ -84,6 +89,16 @@ set hlsearch
 
 " twig integration
 au BufRead,BufNewFile *.twig setfiletype htmldjango
+
+" php-cs-fixer
+let g:php_cs_fixer_path = "/usr/local/bin/php-cs-fixer" " define the path to the php-cs-fixer.phar
+let g:php_cs_fixer_level = "all"                " which level ?
+let g:php_cs_fixer_config = "default"           " configuration
+let g:php_cs_fixer_php_path = "php"             " Path to PHP
+let g:php_cs_fixer_fixers_list = ""             " List of fixers
+let g:php_cs_fixer_enable_default_mapping = 1   " Enable the mapping by default (<leader>pcd)
+let g:php_cs_fixer_dry_run = 0                  " Call command with dry-run option
+let g:php_cs_fixer_verbose = 0                  " Return the output of command if 1, else an inline information.
 
 " Load pathogen
 call pathogen#runtime_append_all_bundles()
