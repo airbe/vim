@@ -135,9 +135,8 @@ git_branch_color()
      
         color=""
         if git diff --quiet 2>/dev/null >&2 ; then
-            branch="$(git_branch)"
-            has_commit=`git rev-list origin $branch`
-            if [ "$has_commit" != "" ] ; then
+            has_commit="$(git status 2>/dev/null | tail -n 1)"
+            if [ "$has_commit" != "nothing to commit (working directory clean)" ] ; then
                 color="${yellow}" # some commits to push
             else
                 color="${green}" # nothing to commit or push
