@@ -31,7 +31,8 @@ set statusline=[%l,%v\ %P%M]\ %f\ %r%h%w\ (%{&ff})\ %{fugitive#statusline()}
 " Highlight chars that go over the 80-column limit
 " :highlight OverLength ctermbg=red ctermfg=white guibg=red guifg=white
 " :match OverLength '\%81v.*'
-
+:highlight ExtraWhitespace ctermbg=red guibg=red
+:match ExtraWhitespace /\s\+$/
 
 " Ne pas assurer la compatibilité avec l'ancien Vi
 set nocompatible
