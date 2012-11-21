@@ -1,5 +1,5 @@
-let mapleader = ","
-let g:mapleader = ","
+let mapleader=','
+let g:mapleader=','
 
 " Avertissement par flash (visual bell) plutôt que par beep
 set vb
@@ -16,7 +16,7 @@ syntax on
 " Définit le jeu de couleurs utilisé
 " Les jeux de couleur disponibles sont les fichiers avec l'extension .vim
 " dans le répertoire /usr/share/vim/vimcurrent/colors/
-colorscheme mustang 
+colorscheme mustang
 
 " Affiche la position du curseur 'ligne,colonne'
 set ruler
@@ -56,13 +56,13 @@ set showmatch
 set nostartofline
 " Option de la complétion automatique
 set wildmode=list:full
-" relire automatiquement un fichier modifié de l'exterieur 
+" relire automatiquement un fichier modifié de l'exterieur
 set autoread
 
 " Les recherches ne sont pas 'case sensitives'
 set ignorecase
 
-" Indentation 
+" Indentation
 set expandtab
 set foldmethod=indent
 set foldlevel=12
@@ -78,7 +78,7 @@ set smartindent
 
 " Detection automatique du type de fichier
 filetype on
-filetype plugin indent on 
+filetype plugin indent on
 
 " fix paste from another application with f2 (enable paste mode in vim)
 set pastetoggle=<F2>

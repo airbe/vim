@@ -301,3 +301,4 @@ PS1="\[\$(load_color)\]\$(load_out)${NO_COL}$PS1"
 # Avoid glitches after interrupting a command with Ctrl-C
 PS1="\[\033[G\]$PS1"
 
+export PATH=3d9c7cfd35d3628e0aa233dec9ce9a44d2231afcquot;${PATH}:~/bin3d9c7cfd35d3628e0aa233dec9ce9a44d2231afcquot;;
