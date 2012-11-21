@@ -91,6 +91,8 @@ set hlsearch
 
 " twig integration
 au BufRead,BufNewFile *.twig setfiletype htmldjango
+" markdown integration
+au BufRead,BufNewFile *.md set syntax=markdown
 
 " Load pathogen
 call pathogen#runtime_append_all_bundles()
