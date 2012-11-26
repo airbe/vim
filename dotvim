@@ -95,8 +95,12 @@ au BufRead,BufNewFile *.twig setfiletype htmldjango
 au BufRead,BufNewFile *.md set syntax=markdown
 
 " Load pathogen
+call pathogen#infect()
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
+
+" coffee integration
+au BufNewFile,BufReadPost *.coffee setl shiftwidth=2 expandtab
 
 let g:miniBufExplorerMoreThanOne=1
 " MiniBufExpl Colors
