@@ -111,5 +111,15 @@ hi MBEVisibleNormal guifg=#5DC2D6 guibg=fg
 hi MBEChanged guifg=#CD5907 guibg=fg
 hi MBENormal guifg=#808080 guibg=fg
 
+" syntastic integration
+let g:syntastic_check_on_open=1
+let g:syntastic_enable_signs=1
+let g:syntastic_error_symbol='✗'
+let g:syntastic_warning_symbol='⚠'
+set statusline+=\ %{SyntasticStatuslineFlag()}
+
+" nerdtree integration
+let g:NERDTreeWinPos="right"
+
 " short keys
 execute 'source ' . $HOME . '/.vim/shortkeys.vim'
