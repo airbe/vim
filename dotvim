@@ -1,6 +1,9 @@
 let mapleader=','
 let g:mapleader=','
 
+set backupdir=./.backup,.,/tmp
+set directory=.,./.backup,/tmp
+
 " Avertissement par flash (visual bell) plutôt que par beep
 set vb
 set encoding=utf-8
