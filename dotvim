@@ -134,5 +134,8 @@ set statusline+=\ %{SyntasticStatuslineFlag()}
 " nerdtree integration
 let g:NERDTreeWinPos="right"
 
+" ctrlp
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*cache*
+
 " short keys
 execute 'source ' . $HOME . '/.vim/shortkeys.vim'
