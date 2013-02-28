@@ -1,6 +1,4 @@
 # VIM Configure
-./configure --with-features=huge --enable-rubyinterp --enable-cscope --enable-multibyte --enable-pythoninterp=yes --enable-python3interp=yes
-
 git clone git://github.com/romainbureau/vim.git ~/.vim
 
 sudo aptitude install exuberant-ctags
@@ -10,11 +8,3 @@ ln -s ~/.vim/dotvim ~/.vimrc
 cd ~/.vim
 git submodule init
 git submodule update
-git submodule foreach git submodule init 
-git submodule foreach git submodule update 
-
-cd bundle/command-t
-rake make
-
-sudo wget http://cs.sensiolabs.org/get/php-cs-fixer.phar -O /usr/local/bin/php-cs-fixer
-sudo chmod a+x /usr/local/bin/php-cs-fixer
