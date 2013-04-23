@@ -5,6 +5,8 @@ sudo aptitude install exuberant-ctags
 
 ln -s ~/.vim/dotvim ~/.vimrc
 
+sudo wget http://cs.sensiolabs.org/get/php-cs-fixer.phar -O /usr/local/bin/php-cs-fixer
+
 cd ~/.vim
 git submodule init
 git submodule update
