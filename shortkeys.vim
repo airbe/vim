@@ -1,3 +1,5 @@
+nnoremap <F3> :NumbersToggle<CR>
+nnoremap <F4> :NumbersOnOff<CR>
 map <F5> mzgg=G`z<CR>
 map <F8> <Esc>:TlistToggle<CR>
 map <F9> <Esc>:NERDTreeToggle<CR>
