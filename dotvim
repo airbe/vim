@@ -16,7 +16,7 @@ set vb
 set encoding=utf-8
 set fileformat=unix
 set t_Co=256
-set lazyredraw
+" set lazyredraw
 " numero de ligne
 set number
 highlight LineNr ctermbg=blue ctermfg=gray
@@ -37,9 +37,10 @@ set statusline=[%l,%v\ %P%M]\ %f\ %r%h%w\ (%{&ff})\ %{fugitive#statusline()}
 
 " Largeur maxi du texte inséré
 " set textwidth=80
-" set colorcolumn=80
+set colorcolumn=81
+highlight ColorColumn guibg=gray40 ctermbg=8
 " Highlight chars that go over the 80-column limit
-:highlight OverLength ctermbg=red ctermfg=white guibg=red guifg=white
+" :highlight OverLength ctermbg=red ctermfg=white guibg=red guifg=white
 " :match OverLength '\%81v.*'
 :highlight ExtraWhitespace ctermbg=red guibg=red
 :match ExtraWhitespace /\s\+$/
