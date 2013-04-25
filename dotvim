@@ -70,7 +70,7 @@ set wildmode=list:full
 set autoread
 " highlight current line
 set cursorline
-hi CursorLine cterm=none term=none ctermfg=white guibg=Grey40
+hi CursorLine cterm=none term=none ctermfg=none guibg=Grey40
 " highlight column
 " set cursorcolumn
 " Les recherches ne sont pas 'case sensitives'
