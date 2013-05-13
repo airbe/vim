@@ -26,7 +26,7 @@ syntax on
 " Définit le jeu de couleurs utilisé
 " Les jeux de couleur disponibles sont les fichiers avec l'extension .vim
 " dans le répertoire /usr/share/vim/vimcurrent/colors/
-colorscheme mustang
+colorscheme github
 
 " Affiche la position du curseur 'ligne,colonne'
 set ruler
