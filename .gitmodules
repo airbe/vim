@@ -64,3 +64,9 @@
 [submodule "bundle/pyflakes-vim"]
 	path = bundle/pyflakes-vim
 	url = https://github.com/kevinw/pyflakes-vim.git
+[submodule "vim-phpqa"]
+	path = vim-phpqa
+	url = https://github.com/joonty/vim-phpqa.git
+[submodule "bundle/vim-phpqa"]
+	path = bundle/vim-phpqa
+	url = https://github.com/joonty/vim-phpqa.git
