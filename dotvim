@@ -119,12 +119,12 @@ au BufNewFile,BufReadPost *.jade setl shiftwidth=2 expandtab
 
 let g:miniBufExplorerMoreThanOne=1
 " MiniBufExpl Colors
-hi MBEVisibleActive guifg=#A6DB29 guibg=fg
-hi MBEVisibleChangedActive guifg=#F1266F guibg=fg
-hi MBEVisibleChanged guifg=#F1266F guibg=fg
-hi MBEVisibleNormal guifg=#5DC2D6 guibg=fg
-hi MBEChanged guifg=#CD5907 guibg=fg
-hi MBENormal guifg=#808080 guibg=fg
+" hi MBEVisibleActive guifg=#A6DB29 guibg=fg
+" hi MBEVisibleChangedActive guifg=#F1266F guibg=fg
+" hi MBEVisibleChanged guifg=#F1266F guibg=fg
+" hi MBEVisibleNormal guifg=#5DC2D6 guibg=fg
+" hi MBEChanged guifg=#CD5907 guibg=fg
+" hi MBENormal guifg=#808080 guibg=fg
 
 " syntastic integration
 let g:syntastic_check_on_open=1
@@ -134,7 +134,7 @@ let g:syntastic_warning_symbol='⚠'
 set statusline+=\ %{SyntasticStatuslineFlag()}
 
 " nerdtree integration
-let g:NERDTreeWinPos="right"
+let g:NERDTreeWinPos="left"
 
 " ctrlp
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*cache*
@@ -149,11 +149,6 @@ let g:php_cs_fixer_fixers_list = ""             " List of fixers
 let g:php_cs_fixer_enable_default_mapping = 1   " Enable the mapping by default (<leader>pcd)
 let g:php_cs_fixer_dry_run = 0                  " Call command with dry-run option
 let g:php_cs_fixer_verbose = 1                  " Return the output of command if 1, else an inline information.
-
-" Don't run messdetector on save (default = 1)
-let g:phpqa_messdetector_autorun = 0
-" Don't run codesniffer on save (default = 1)
-let g:phpqa_codesniffer_autorun = 0
 
 " short keys
 execute 'source ' . $HOME . '/.vim/shortkeys.vim'
