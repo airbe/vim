@@ -134,7 +134,7 @@ let g:syntastic_warning_symbol='⚠'
 set statusline+=\ %{SyntasticStatuslineFlag()}
 
 " nerdtree integration
-let g:NERDTreeWinPos="left"
+let g:NERDTreeWinPos="right"
 
 " ctrlp
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*cache*
