@@ -1,146 +1,100 @@
 let mapleader=','
 let g:mapleader=','
-
-" set backup
-set backupdir^=$HOME/.vimbackup//
-set directory^=$HOME/.vimswap//
-set viewdir^=$HOME/.vimviews//
-
-"" Creating directories if they don't exist
-silent execute '!mkdir -p $HOME/.vimbackup'
-silent execute '!mkdir -p $HOME/.vimswap'
-silent execute '!mkdir -p $HOME/.vimviews'
-
-" Avertissement par flash (visual bell) plutôt que par beep
+set background=dark
 set vb
 set encoding=utf-8
+set ffs=unix,dos,mac
 set fileformat=unix
 set t_Co=256
 set lazyredraw
-" numero de ligne
 set number
 highlight LineNr ctermbg=blue ctermfg=gray
-
-" Active la coloration syntaxique
 syntax on
-" Définit le jeu de couleurs utilisé
-" Les jeux de couleur disponibles sont les fichiers avec l'extension .vim
-" dans le répertoire /usr/share/vim/vimcurrent/colors/
 colorscheme molokai
-
-" Affiche la position du curseur 'ligne,colonne'
 set ruler
-" Affiche une barre de status en bas de l'écran
+set cmdheight=1
+set hid
 set laststatus=2
-" Contenu de la barre de status
 set statusline=[%l,%v\ %P%M]\ %f\ %r%h%w\ (%{&ff})\ %{fugitive#statusline()}
-
-" Largeur maxi du texte inséré
-" set textwidth=80
-" set colorcolumn=81
-" highlight ColorColumn guibg=none ctermbg=8
 :highlight ExtraWhitespace ctermbg=red guibg=red
 :match ExtraWhitespace /\s\+$/
-
-" Ne pas assurer la compatibilité avec l'ancien Vi
 set nocompatible
-" Nombre de colonnes (inutile, voire gênant)
-" set columns=80
-" Nombre de commandes dans l'historique
-set history=50
-" Options du fichier ~/.viminfo
-set viminfo='20,\"50
-" Active la touche Backspace
-set backspace=2
-" Autorise le passage d'une ligne à l'autre avec les flèches gauche et droite
+set history=700
+set viminfo^=%
+set backspace=eol,start,indent
+set whichwrap+=<,>,h,l
 set whichwrap=<,>,[,]
-" Garde toujours une ligne visible à l'écran au dessus du curseur
 set scrolloff=1
-" Affiche les commandes dans la barre de status
 set showcmd
-" Affiche la paire de parenthèses
 set showmatch
-" Essaye de garder le curseur dans la même colonne quand on change de ligne
+set mat=2
 set nostartofline
-" Option de la complétion automatique
 set wildmode=list:full
-" relire automatiquement un fichier modifié de l'exterieur
+set wildmenu
 set autoread
-" highlight current line
 set cursorline
 hi CursorLine cterm=none term=none ctermfg=none guibg=Grey40
-" highlight column
-" set cursorcolumn
-" Les recherches ne sont pas 'case sensitives'
 set ignorecase
-
-" Indentation
 set expandtab
-set foldmethod=indent
-set foldlevel=12
 set shiftwidth=4
+set smarttab
 set softtabstop=4
 set tabstop=4
 set autoindent
 set smartindent
-" Décommentez les 2 lignes suivantes si vous voulez avoir les tabulations et
-" les espaces marqués en caractères bleus
-" set list
-" set listchars=tab:>-,trail:-
-
-" Detection automatique du type de fichier
+set nobackup
+set nowb
+set noswapfile
 filetype on
 filetype plugin indent on
+nmap <leader>w :w!<cr>
 
-" fix paste from another application with f2 (enable paste mode in vim)
 set pastetoggle=<F2>
 
-" Recherches incrémentalees : rechercher au fur et à mesure qu'on
-" tape le motif de recherche
 set incsearch
-" Mettre en surbrillance le mot cherché
 set hlsearch
 
-" twig integration
 au BufRead,BufNewFile *.twig setfiletype htmldjango
-" markdown integration
 au BufRead,BufNewFile *.md set syntax=markdown
 
-" Load pathogen
 call pathogen#infect()
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 
-" coffee integration
 au BufNewFile,BufReadPost *.coffee setl shiftwidth=2 expandtab
 
-" jade integration
 au BufNewFile,BufReadPost *.jade setl shiftwidth=2 expandtab
 
-let g:miniBufExplorerMoreThanOne=1
-" MiniBufExpl Colors
-" hi MBEVisibleActive guifg=#A6DB29 guibg=fg
-" hi MBEVisibleChangedActive guifg=#F1266F guibg=fg
-" hi MBEVisibleChanged guifg=#F1266F guibg=fg
-" hi MBEVisibleNormal guifg=#5DC2D6 guibg=fg
-" hi MBEChanged guifg=#CD5907 guibg=fg
-" hi MBENormal guifg=#808080 guibg=fg
+autocmd BufReadPost *
+     \ if line("'\"") > 0 && line("'\"") <= line("$") |
+     \   exe "normal! g`\"" |
+     \ endif
 
-" syntastic integration
+func! DeleteTrailingWS()
+  exe "normal mz"
+  %s/\s\+$//ge
+  exe "normal `z"
+endfunc
+autocmd BufWrite *.py :call DeleteTrailingWS()
+autocmd BufWrite *.coffee :call DeleteTrailingWS()
+
+let g:miniBufExplorerMoreThanOne=1
+let g:miniBufExplMapWindowNavVim = 1
+let g:miniBufExplMapWindowNavArrows = 1
+let g:miniBufExplMapCTabSwitchBufs = 1
+let g:miniBufExplModSelTarget = 1
+
 let g:syntastic_check_on_open=1
 let g:syntastic_enable_signs=1
 let g:syntastic_error_symbol='✗'
 let g:syntastic_warning_symbol='⚠'
 set statusline+=\ %{SyntasticStatuslineFlag()}
 
-" nerdtree integration
 let g:NERDTreeWinPos="right"
 
-" ctrlp
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*cache*
 let g:ctrlp_working_path_mode = 'ra'
 
-" php-cs-fixer
 let g:php_cs_fixer_path = "/usr/local/bin/php-cs-fixer" " define the path to the php-cs-fixer.phar
 let g:php_cs_fixer_level = "all"                " which level ?
 let g:php_cs_fixer_config = "default"           " configuration
@@ -150,5 +104,4 @@ let g:php_cs_fixer_enable_default_mapping = 1   " Enable the mapping by default 
 let g:php_cs_fixer_dry_run = 0                  " Call command with dry-run option
 let g:php_cs_fixer_verbose = 1                  " Return the output of command if 1, else an inline information.
 
-" short keys
 execute 'source ' . $HOME . '/.vim/shortkeys.vim'
