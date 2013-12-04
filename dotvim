@@ -91,6 +91,7 @@ let g:syntastic_warning_symbol='⚠'
 set statusline+=\ %{SyntasticStatuslineFlag()}
 
 let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#show_buffers = 1
 
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*cache*
 let g:ctrlp_working_path_mode = 'ra'
