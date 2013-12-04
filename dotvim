@@ -90,7 +90,7 @@ let g:syntastic_error_symbol='✗'
 let g:syntastic_warning_symbol='⚠'
 set statusline+=\ %{SyntasticStatuslineFlag()}
 
-let g:NERDTreeWinPos="right"
+let g:airline#extensions#tabline#enabled = 1
 
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*cache*
 let g:ctrlp_working_path_mode = 'ra'
