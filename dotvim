@@ -11,7 +11,7 @@ set lazyredraw
 set number
 highlight LineNr ctermbg=blue ctermfg=gray
 syntax on
-colorscheme molokai
+colorscheme ir_black
 set ruler
 set cmdheight=1
 set hid
@@ -89,7 +89,7 @@ let g:syntastic_enable_signs=1
 let g:syntastic_error_symbol='✗'
 let g:syntastic_warning_symbol='⚠'
 
-let g:airline_theme='tomorrow'
+" let g:airline_theme='base16'
 let g:airline#extensions#syntastic#enabled = 1
 " let g:airline#extensions#tabline#enabled = 1
 " let g:airline#extensions#tabline#show_buffers = 1
