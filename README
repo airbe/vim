@@ -1,11 +1,7 @@
 # VIM Configure
 git clone git://github.com/romainbureau/vim.git ~/.vim
 
-sudo aptitude install exuberant-ctags pyflakes
-
 ln -s ~/.vim/dotvim ~/.vimrc
-
-sudo wget http://cs.sensiolabs.org/get/php-cs-fixer.phar -O /usr/local/bin/php-cs-fixer
 
 ``` bash
 cd ~/.vim
