@@ -91,19 +91,10 @@ let g:syntastic_warning_symbol='⚠'
 
 let g:airline_theme='tomorrow'
 let g:airline#extensions#syntastic#enabled = 1
-let g:airline#extensions#tabline#enabled = 1
-"let g:airline#extensions#tabline#show_buffers = 1
+" let g:airline#extensions#tabline#enabled = 1
+" let g:airline#extensions#tabline#show_buffers = 1
 
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*cache*
 let g:ctrlp_working_path_mode = 'ra'
-
-let g:php_cs_fixer_path = "/usr/local/bin/php-cs-fixer" " define the path to the php-cs-fixer.phar
-let g:php_cs_fixer_level = "all"                " which level ?
-let g:php_cs_fixer_config = "default"           " configuration
-let g:php_cs_fixer_php_path = "php"             " Path to PHP
-let g:php_cs_fixer_fixers_list = ""             " List of fixers
-let g:php_cs_fixer_enable_default_mapping = 1   " Enable the mapping by default (<leader>pcd)
-let g:php_cs_fixer_dry_run = 0                  " Call command with dry-run option
-let g:php_cs_fixer_verbose = 1                  " Return the output of command if 1, else an inline information.
 
 execute 'source ' . $HOME . '/.vim/shortkeys.vim'
