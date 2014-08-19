@@ -11,7 +11,7 @@ set lazyredraw
 set number
 highlight LineNr ctermbg=blue ctermfg=gray
 syntax on
-colorscheme ir_black
+colorscheme tir_black
 set ruler
 set cmdheight=1
 set hid
