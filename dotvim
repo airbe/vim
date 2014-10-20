@@ -18,6 +18,7 @@ set hid
 set laststatus=2
 :highlight ExtraWhitespace ctermbg=red guibg=red
 :match ExtraWhitespace /\s\+$/
+set clipboard=unnamedplus,unnamed,autoselect
 set nocompatible
 set history=700
 set viminfo^=%
@@ -62,8 +63,8 @@ call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 
 au BufNewFile,BufReadPost *.coffee setl shiftwidth=2 expandtab
-
 au BufNewFile,BufReadPost *.jade setl shiftwidth=2 expandtab
+au BufNewFile,BufReadPost *.py setl tabstop=8 shiftwidth=2 expandtab
 
 autocmd BufReadPost *
      \ if line("'\"") > 0 && line("'\"") <= line("$") |
