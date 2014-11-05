@@ -1,6 +1,6 @@
 map <F5> mzgg=G`z<CR>
-map <F8> <Esc>:TlistToggle<CR>
-map <C-B> <Esc>:!php -l %<CR>
+nnoremap <C-n>   :bnext<CR>
+inoremap <C-n>   <Esc>:bnext<CR>i
 
 " Tabularize
 nnoremap <leader>t,    :Tabularize /,\zs<CR>
@@ -25,6 +25,7 @@ function! s:align()
     let p = '^\s*|\s.*\s|\s*$'
     if getline('.') =~# '^\s*|' && (getline(line('.')-1) =~# p || getline(line('.')+1) =~# p)
         let column = strlen(substitute(getline('.')[0:col('.')],'[^|]','','g'))
+        B
         let position = strlen(matchstr(getline('.')[0:col('.')],'.*|\s*\zs.*'))
         Tabularize/|/l1
         normal! 0
