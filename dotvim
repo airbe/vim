@@ -81,5 +81,9 @@ autocmd BufWrite *.py :call DeleteTrailingWS()
 
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*cache*
 let g:ctrlp_working_path_mode = 'ra'
+let g:syntastic_error_symbol='✗'
+let g:syntastic_warning_symbol='⚠'
+let g:airline_theme='base16'
+let g:airline#extensions#syntastic#enabled = 1
 
 execute 'source ' . $HOME . '/.vim/shortkeys.vim'
