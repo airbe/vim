@@ -86,5 +86,4 @@ let g:syntastic_warning_symbol='⚠'
 let g:airline_theme='base16'
 let g:airline#extensions#syntastic#enabled = 1
 
-execute 'source ' . $HOME . '/.vim/header.vim'
 execute 'source ' . $HOME . '/.vim/shortkeys.vim'
