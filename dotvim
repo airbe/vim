@@ -91,4 +91,9 @@ au Syntax * RainbowParenthesesLoadRound
 au Syntax * RainbowParenthesesLoadSquare
 au Syntax * RainbowParenthesesLoadBraces
 
+hi IndentGuidesOdd  ctermbg=black
+hi IndentGuidesEven ctermbg=darkgrey
+let g:indent_guides_start_level = 1
+let g:indent_guides_guide_size = 1
+
 execute 'source ' . $HOME . '/.vim/shortkeys.vim'
