@@ -1,7 +1,6 @@
 let mapleader=','
 let g:mapleader=','
 set background=dark
-let g:rehash256 = 1
 set vb
 set encoding=utf-8
 set ffs=unix,dos,mac
@@ -12,7 +11,8 @@ set mousehide
 set number
 "highlight LineNr ctermbg=blue ctermfg=gray
 syntax on
-colorscheme tir_black
+colorscheme atom-dark-256
+color atom-dark-256
 set ruler
 set cmdheight=1
 set hid
@@ -21,7 +21,7 @@ set laststatus=2
 :match ExtraWhitespace /\s\+$/
 set clipboard=unnamedplus,unnamed,autoselect
 set nocompatible
-set history=700
+set history=200
 set viminfo^=%
 set backspace=eol,start,indent
 set whichwrap+=<,>,h,l
