@@ -66,7 +66,10 @@
 	url = https://github.com/motus/pig.vim.git
 [submodule "bundle/rainbow_parentheses.vim"]
 	path = bundle/rainbow_parentheses.vim
-	url = git@github.com:kien/rainbow_parentheses.vim.git
+	url = https://github.com/kien/rainbow_parentheses.vim.git
 [submodule "bundle/vim-indent-guides"]
 	path = bundle/vim-indent-guides
-	url = git@github.com:nathanaelkane/vim-indent-guides.git
+	url = https://github.com/nathanaelkane/vim-indent-guides.git
+[submodule "bundle/vim-airline-colornum"]
+	path = bundle/vim-airline-colornum
+	url = https://github.com/ntpeters/vim-airline-colornum.git
