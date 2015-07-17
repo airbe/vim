@@ -1,5 +1,5 @@
 # VIM Configure
-git clone git://github.com/romainbureau/vim.git ~/.vim
+git clone https://github.com/romainbureau/vim.git ~/.vim
 
 ln -s ~/.vim/dotvim ~/.vimrc
 
