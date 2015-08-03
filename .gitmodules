@@ -73,3 +73,6 @@
 [submodule "bundle/vim-airline-colornum"]
 	path = bundle/vim-airline-colornum
 	url = https://github.com/ntpeters/vim-airline-colornum.git
+[submodule "bundle/terminus"]
+	path = bundle/terminus
+	url = https://github.com/wincent/terminus.git
