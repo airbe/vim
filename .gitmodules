@@ -70,9 +70,6 @@
 [submodule "bundle/vim-indent-guides"]
 	path = bundle/vim-indent-guides
 	url = https://github.com/nathanaelkane/vim-indent-guides.git
-[submodule "bundle/vim-airline-colornum"]
-	path = bundle/vim-airline-colornum
-	url = https://github.com/ntpeters/vim-airline-colornum.git
 [submodule "bundle/terminus"]
 	path = bundle/terminus
 	url = https://github.com/wincent/terminus.git
