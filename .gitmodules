@@ -73,3 +73,6 @@
 [submodule "bundle/terminus"]
 	path = bundle/terminus
 	url = https://github.com/wincent/terminus.git
+[submodule "bundle/vim-tmux-navigator"]
+	path = bundle/vim-tmux-navigator
+	url = git@github.com:christoomey/vim-tmux-navigator.git

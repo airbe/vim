@@ -105,4 +105,7 @@ hi IndentGuidesEven ctermbg=darkgrey
 let g:indent_guides_start_level = 1
 let g:indent_guides_guide_size = 1
 
+" tmux
+let g:tmux_navigator_save_on_switch = 1
+
 execute 'source ' . $HOME . '/.vim/shortkeys.vim'
