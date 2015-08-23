@@ -19,9 +19,8 @@ git submodule foreach git submodule update
 
 **Tmux + vim**
 
-- <ctrl-h> => Left
-- <ctrl-j> => Down
-- <ctrl-k> => Up
-- <ctrl-l> => Right
-- <ctrl-\> => Previous split
-
+- `<ctrl-h>` => Left
+- `<ctrl-j>` => Down
+- `<ctrl-k>` => Up
+- `<ctrl-l>` => Right
+- `<ctrl-\>` => Previous split
