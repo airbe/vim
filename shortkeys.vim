@@ -1,6 +1,12 @@
-map <F5> mzgg=G`z<CR>
-nnoremap <C-n>   :bnext<CR>
-inoremap <C-n>   <Esc>:bnext<CR>i
+nnoremap <Leader>i mzgg=G`z<CR>
+nnoremap <Leader>n :bnext<CR>
+nnoremap <Leader>o :CtrlP<CR>
+nnoremap <Leader>w :w<CR>
+nmap <Leader><Leader> V
+
+" expand region
+vmap v <Plug>(expand_region_expand)
+vmap <C-v> <Plug>(expand_region_shrink)
 
 " Tabularize
 nnoremap <leader>t,    :Tabularize /,\zs<CR>
