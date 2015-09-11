@@ -5,13 +5,13 @@ set encoding=utf-8
 set ffs=unix,dos,mac
 set fileformat=unix
 set t_Co=256
-set lazyredraw
+"set lazyredraw
 set mousehide
 set number
 "highlight LineNr ctermbg=blue ctermfg=gray
 syntax on
-colorscheme atom-dark-256
-color atom-dark-256
+colorscheme railscasts
+color railscasts
 set ruler
 set cmdheight=1
 set hid
