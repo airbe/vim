@@ -5,7 +5,7 @@ set encoding=utf-8
 set ffs=unix,dos,mac
 set fileformat=unix
 set t_Co=256
-"set lazyredraw
+set lazyredraw
 set mousehide
 set number
 syntax on
@@ -59,8 +59,6 @@ call pathogen#infect()
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 
-au BufNewFile,BufReadPost *.coffee setl shiftwidth=2 expandtab
-au BufNewFile,BufReadPost *.jade setl shiftwidth=2 expandtab
 au BufNewFile,BufReadPost *.py setl tabstop=8 shiftwidth=2 expandtab
 
 set statusline=[%n]\ %<%.99f\ %h%w%m%r%{exists('*CapsLockStatusline')?CapsLockStatusline():''}%y%=%-16(\ %l,%c-%v\ %)%P
@@ -84,7 +82,7 @@ func! DeleteTrailingWS()
 endfunc
 autocmd BufWrite *.py :call DeleteTrailingWS()
 
-set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*cache*
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*cache*,.idea,target
 let g:ctrlp_working_path_mode = 'ra'
 
 hi IndentGuidesOdd  ctermbg=black
