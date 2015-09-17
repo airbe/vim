@@ -86,10 +86,6 @@ autocmd BufWrite *.py :call DeleteTrailingWS()
 
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*cache*
 let g:ctrlp_working_path_mode = 'ra'
-au VimEnter * RainbowParenthesesToggle
-au Syntax * RainbowParenthesesLoadRound
-au Syntax * RainbowParenthesesLoadSquare
-au Syntax * RainbowParenthesesLoadBraces
 
 hi IndentGuidesOdd  ctermbg=black
 hi IndentGuidesEven ctermbg=darkgrey
