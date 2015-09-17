@@ -1,5 +1,6 @@
 nnoremap <Leader>i mzgg=G`z<CR>
 nnoremap <Leader>n :bnext<CR>
+nnoremap <Leader>p :bprevious<CR>
 nnoremap <Leader>o :CtrlP<CR>
 nnoremap <Leader>w :w<CR>
 nmap <Leader><Leader> V

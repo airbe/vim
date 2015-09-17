@@ -58,9 +58,6 @@
 [submodule "bundle/bufkill"]
 	path = bundle/bufkill
 	url = https://github.com/vim-scripts/bufkill.vim.git
-[submodule "bundle/vim-airline"]
-	path = bundle/vim-airline
-	url = https://github.com/bling/vim-airline
 [submodule "bundle/pig"]
 	path = bundle/pig
 	url = https://github.com/motus/pig.vim.git

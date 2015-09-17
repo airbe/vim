@@ -8,10 +8,9 @@ set t_Co=256
 "set lazyredraw
 set mousehide
 set number
-"highlight LineNr ctermbg=blue ctermfg=gray
 syntax on
-colorscheme railscasts
-color railscasts
+colorscheme rb
+color rb
 set ruler
 set cmdheight=1
 set hid
@@ -34,7 +33,6 @@ set wildmode=list:full
 set wildmenu
 set autoread
 set cursorline
-"hi CursorLine cterm=none term=none ctermfg=none guibg=Grey40
 set ignorecase
 set expandtab
 set shiftwidth=4
@@ -48,7 +46,6 @@ set nowb
 set noswapfile
 filetype on
 filetype plugin indent on
-nmap <leader>w :w!<cr>
 
 set pastetoggle=<F2>
 
@@ -66,9 +63,7 @@ au BufNewFile,BufReadPost *.coffee setl shiftwidth=2 expandtab
 au BufNewFile,BufReadPost *.jade setl shiftwidth=2 expandtab
 au BufNewFile,BufReadPost *.py setl tabstop=8 shiftwidth=2 expandtab
 
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
+set statusline=[%n]\ %<%.99f\ %h%w%m%r%{exists('*CapsLockStatusline')?CapsLockStatusline():''}%y%=%-16(\ %l,%c-%v\ %)%P
 
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
@@ -91,8 +86,6 @@ set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*cache*
 let g:ctrlp_working_path_mode = 'ra'
 let g:syntastic_error_symbol='✗'
 let g:syntastic_warning_symbol='⚠'
-let g:airline_theme='base16'
-let g:airline#extensions#syntastic#enabled = 1
 
 au VimEnter * RainbowParenthesesToggle
 au Syntax * RainbowParenthesesLoadRound
