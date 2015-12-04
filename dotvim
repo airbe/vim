@@ -59,6 +59,7 @@ call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 
 au BufNewFile,BufReadPost *.py setl tabstop=8 shiftwidth=2 expandtab
+au BufNewFile,BufReadPost *.scala setl tabstop=2 shiftwidth=2 expandtab
 
 set statusline=[%n]\ %<%.99f\ %h%w%m%r%{exists('*CapsLockStatusline')?CapsLockStatusline():''}%y%=%-16(\ %l,%c-%v\ %)%P
 
