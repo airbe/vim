@@ -4,6 +4,7 @@ nnoremap <Leader>p :bprevious<CR>
 nnoremap <Leader>o :CtrlP<CR>
 nnoremap <Leader>w :w<CR>
 nmap <Leader><Leader> V
+nnoremap <Leader>z :ZoomWin<CR>
 
 " expand region
 vmap v <Plug>(expand_region_expand)
