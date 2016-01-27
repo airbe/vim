@@ -1,10 +1,11 @@
 nnoremap <Leader>i mzgg=G`z<CR>
-nnoremap <Leader>n :bnext<CR>
-nnoremap <Leader>p :bprevious<CR>
+nnoremap <Leader>l :bnext<CR>
+nnoremap <Leader>h :bprevious<CR>
 nnoremap <Leader>o :CtrlP<CR>
 nnoremap <Leader>w :w<CR>
 nmap <Leader><Leader> V
 nnoremap <Leader>z :ZoomWin<CR>
+nnoremap <leader>p :set invpaste paste?<CR>
 
 " expand region
 vmap v <Plug>(expand_region_expand)
