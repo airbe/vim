@@ -5,12 +5,12 @@ set encoding=utf-8
 set ffs=unix,dos,mac
 set fileformat=unix
 set t_Co=256
-set lazyredraw
+"set lazyredraw
 set mousehide
 set number
 syntax on
-colorscheme rb
-color rb
+colorscheme jellybeans
+color jellybeans
 set ruler
 set cmdheight=1
 set hid
