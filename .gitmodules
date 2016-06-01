@@ -1,18 +1,6 @@
-[submodule "bundle/vim-align"]
-	path = bundle/vim-align
-	url = https://github.com/tsaleh/vim-align.git
-[submodule "bundle/git"]
-	path = bundle/git
-	url = https://github.com/tpope/vim-git.git
-[submodule "bundle/fugitive"]
-	path = bundle/fugitive
-	url = https://github.com/tpope/vim-fugitive.git
 [submodule "bundle/supertab"]
 	path = bundle/supertab
 	url = https://github.com/ervandew/supertab.git
-[submodule "bundle/taglist"]
-	path = bundle/taglist
-	url = https://github.com/vim-scripts/taglist.vim.git
 [submodule "bundle/markdown"]
 	path = bundle/markdown
 	url = https://github.com/tpope/vim-markdown.git
@@ -25,15 +13,6 @@
 [submodule "bundle/ctrlp"]
 	path = bundle/ctrlp
 	url = https://github.com/kien/ctrlp.vim.git
-[submodule "bundle/vim-surround"]
-	path = bundle/vim-surround
-	url = https://github.com/tpope/vim-surround.git
-[submodule "bundle/vim-easymotion"]
-	path = bundle/vim-easymotion
-	url = https://github.com/Lokaltog/vim-easymotion.git
-[submodule "bundle/vim-abolish"]
-	path = bundle/vim-abolish
-	url = https://github.com/tpope/vim-abolish.git
 [submodule "bundle/pyflakes-vim"]
 	path = bundle/pyflakes-vim
 	url = https://github.com/kevinw/pyflakes-vim.git
@@ -55,26 +34,14 @@
 [submodule "bundle/vim-scala"]
 	path = bundle/vim-scala
 	url = https://github.com/derekwyatt/vim-scala.git
-[submodule "bundle/bufkill"]
-	path = bundle/bufkill
-	url = https://github.com/vim-scripts/bufkill.vim.git
 [submodule "bundle/pig"]
 	path = bundle/pig
 	url = https://github.com/motus/pig.vim.git
-[submodule "bundle/vim-indent-guides"]
-	path = bundle/vim-indent-guides
-	url = https://github.com/nathanaelkane/vim-indent-guides.git
-[submodule "bundle/terminus"]
-	path = bundle/terminus
-	url = https://github.com/wincent/terminus.git
-[submodule "bundle/vim-tmux-navigator"]
-	path = bundle/vim-tmux-navigator
-	url = git@github.com:christoomey/vim-tmux-navigator.git
 [submodule "bundle/vim-expand-region"]
 	path = bundle/vim-expand-region
 	url = git@github.com:terryma/vim-expand-region.git
 [submodule "bundle/zoomwin"]
-	path = bundle/zoomwin
+    path = bundle/zoomwin
 	url = https://github.com/vim-scripts/ZoomWin.git
 [submodule "bundle/vim-go"]
 	path = bundle/vim-go
