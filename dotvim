@@ -17,7 +17,6 @@ set hid
 set laststatus=2
 :highlight ExtraWhitespace ctermbg=red guibg=red
 :match ExtraWhitespace /\s\+$/
-set clipboard=unnamedplus,unnamed,autoselect
 set nocompatible
 set history=200
 set viminfo^=%
