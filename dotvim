@@ -27,6 +27,7 @@ set scrolloff=1
 set showcmd
 set showmode
 set showmatch
+set showbreak=↪
 set mat=2
 set nostartofline
 set wildmode=list:full
@@ -64,7 +65,7 @@ au BufNewFile,BufReadPost *.yml setl tabstop=2 shiftwidth=2 expandtab
 
 set statusline=[%n]\ %<%.99f\ %h%w%m%r%{exists('*CapsLockStatusline')?CapsLockStatusline():''}%y%=%-16(\ %l,%c-%v\ %)%P
 
-set statusline=%f       "tail of the filename
+set statusline=%F       "tail of the filename
 set statusline+=[%{strlen(&fenc)?&fenc:'none'}, "file encoding
 set statusline+=%{&ff}] "file format
 set statusline+=%h      "help file flag
