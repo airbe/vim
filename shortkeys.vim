@@ -46,3 +46,6 @@ function! s:align()
         call search(repeat('[^|]*|',column).'\s\{-\}'.repeat('.',position),'ce',line('.'))
     endif
 endfunction
+
+map ic :s/^/#/g<CR>:let @/ = ""<CR>
+map rc :s/^#//g<CR>:let @/ = ""<CR>
