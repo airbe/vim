@@ -47,5 +47,5 @@ function! s:align()
     endif
 endfunction
 
-map ic :s/^/#/g<CR>:let @/ = ""<CR>
-map rc :s/^#//g<CR>:let @/ = ""<CR>
+map <leader>c :s/^/#/g<CR>:let @/ = ""<CR>
+map <leader>C :s/^#//g<CR>:let @/ = ""<CR>
