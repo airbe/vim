@@ -9,8 +9,8 @@ set lazyredraw
 set mousehide
 set number
 syntax on
-colorscheme jellybeans
-color jellybeans
+colorscheme tender
+color tender
 set ruler
 set cmdheight=1
 set hid
@@ -63,19 +63,10 @@ au BufNewFile,BufReadPost *.scala setl tabstop=2 shiftwidth=2 expandtab
 au BufNewFile,BufReadPost *.yaml setl tabstop=2 shiftwidth=2 expandtab
 au BufNewFile,BufReadPost *.yml setl tabstop=2 shiftwidth=2 expandtab
 
-set statusline=[%n]\ %<%.99f\ %h%w%m%r%{exists('*CapsLockStatusline')?CapsLockStatusline():''}%y%=%-16(\ %l,%c-%v\ %)%P
-
-set statusline=%F       "tail of the filename
-set statusline+=[%{strlen(&fenc)?&fenc:'none'}, "file encoding
-set statusline+=%{&ff}] "file format
-set statusline+=%h      "help file flag
-set statusline+=%m      "modified flag
-set statusline+=%r      "read only flag
-set statusline+=%y      "filetype
-set statusline+=%=      "left/right separator
-set statusline+=%c,     "cursor column
-set statusline+=%l/%L   "cursor line/total lines
-set statusline+=\ %P    "percent through file
+" enable tender lightline theme
+let g:tender_lightline = 1
+" set lighline theme (inside lightline config)
+let g:lightline = { 'colorscheme': 'tender' }
 
 let g:syntastic_always_populate_loc_list = 0
 let g:syntastic_auto_loc_list = 0
