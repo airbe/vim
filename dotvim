@@ -63,11 +63,6 @@ au BufNewFile,BufReadPost *.scala setl tabstop=2 shiftwidth=2 expandtab
 au BufNewFile,BufReadPost *.yaml setl tabstop=2 shiftwidth=2 expandtab
 au BufNewFile,BufReadPost *.yml setl tabstop=2 shiftwidth=2 expandtab
 
-" enable tender lightline theme
-let g:tender_lightline = 1
-" set lighline theme (inside lightline config)
-let g:lightline = { 'colorscheme': 'tender' }
-
 let g:syntastic_always_populate_loc_list = 0
 let g:syntastic_auto_loc_list = 0
 let g:syntastic_check_on_open = 1
