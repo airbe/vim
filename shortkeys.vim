@@ -1,7 +1,7 @@
-"noremap <Up> <NOP>
-"noremap <Down> <NOP>
-"noremap <Left> <NOP>
-"noremap <Right> <NOP>
+noremap <Up> <NOP>
+noremap <Down> <NOP>
+noremap <Left> <NOP>
+noremap <Right> <NOP>
 
 nnoremap <Leader>i mzgg=G`z<CR>
 nnoremap <Leader>l :bnext<CR>
