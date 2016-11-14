@@ -53,3 +53,6 @@ endfunction
 
 map <leader>c :s/^/#/g<CR>:let @/ = ""<CR>
 map <leader>C :s/^#//g<CR>:let @/ = ""<CR>
+
+:nnoremap s :exec "normal i".nr2char(getchar())."\e"<CR>
+:nnoremap S :exec "normal a".nr2char(getchar())."\e"<CR>
