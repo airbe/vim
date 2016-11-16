@@ -55,3 +55,6 @@
 [submodule "bundle/rust"]
 	path = bundle/rust
 	url = https://github.com/rust-lang/rust.vim.git
+[submodule "bundle/vim-tickscript"]
+	path = bundle/vim-tickscript
+	url = https://github.com/nathanielc/vim-tickscript.git
