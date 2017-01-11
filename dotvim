@@ -12,7 +12,7 @@ syntax on
 colorscheme hybrid
 color hybrid
 let g:hybrid_custom_term_colors = 1
-let g:hybrid_reduced_contrast = 1 " Remove this line if using the default palette.
+" let g:hybrid_reduced_contrast = 1 " Remove this line if using the default palette.
 set ruler
 set cmdheight=1
 set hid
@@ -93,5 +93,7 @@ hi IndentGuidesOdd  ctermbg=black
 hi IndentGuidesEven ctermbg=darkgrey
 let g:indent_guides_start_level = 1
 let g:indent_guides_guide_size = 1
+
+let g:lightline = { 'colorscheme': 'wombat', }
 
 execute 'source ' . $HOME . '/.vim/shortkeys.vim'
