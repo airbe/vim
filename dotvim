@@ -9,8 +9,10 @@ set lazyredraw
 set mousehide
 set number
 syntax on
-colorscheme tender
-color tender
+colorscheme hybrid
+color hybrid
+let g:hybrid_custom_term_colors = 1
+let g:hybrid_reduced_contrast = 1 " Remove this line if using the default palette.
 set ruler
 set cmdheight=1
 set hid
@@ -45,6 +47,7 @@ set smartindent
 set nobackup
 set nowb
 set noswapfile
+set colorcolumn=120
 filetype on
 filetype plugin indent on
 set cm=blowfish
@@ -66,7 +69,7 @@ au BufNewFile,BufReadPost *.yml setl tabstop=2 shiftwidth=2 expandtab
 let g:syntastic_always_populate_loc_list = 0
 let g:syntastic_auto_loc_list = 0
 let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
+let g:syntastic_check_on_wq = 1
 let g:syntastic_error_symbol='✗'
 let g:syntastic_warning_symbol='⚠'
 
