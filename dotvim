@@ -53,6 +53,7 @@ filetype plugin indent on
 set cm=blowfish
 set incsearch
 set hlsearch
+set shell=/usr/local/bin/zsh
 
 au BufRead,BufNewFile *.twig setfiletype htmldjango
 au BufRead,BufNewFile *.md set syntax=markdown
