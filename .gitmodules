@@ -58,3 +58,6 @@
 [submodule "bundle/vim-tickscript"]
 	path = bundle/vim-tickscript
 	url = https://github.com/nathanielc/vim-tickscript.git
+[submodule "bundle/vim-surround"]
+	path = bundle/vim-surround
+	url = git://github.com/tpope/vim-surround.git

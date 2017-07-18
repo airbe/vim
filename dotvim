@@ -65,6 +65,7 @@ au BufNewFile,BufReadPost *.py setl tabstop=8 shiftwidth=2 expandtab
 au BufNewFile,BufReadPost *.scala setl tabstop=2 shiftwidth=2 expandtab
 au BufNewFile,BufReadPost *.yaml setl tabstop=2 shiftwidth=2 expandtab
 au BufNewFile,BufReadPost *.yml setl tabstop=2 shiftwidth=2 expandtab
+au BufNewFile,BufRead *.yaml set filetype=yaml.ansible
 
 let g:syntastic_always_populate_loc_list = 0
 let g:syntastic_auto_loc_list = 0
